@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (targetSection) {
                 const headerHeight = document.querySelector('header').offsetHeight;
-                const targetPosition = targetSection.offsetTop - headerHeight;
+                const noticeHeight = document.querySelector('.date-notice').offsetHeight;
+                const targetPosition = targetSection.offsetTop - headerHeight - noticeHeight;
                 
                 window.scrollTo({
                     top: targetPosition,
@@ -52,7 +53,7 @@ function initScrollAnimations() {
 
 // Countdown timer to event
 function initCountdownTimer() {
-    const eventDate = new Date('2025-09-27T10:00:00').getTime();
+    const eventDate = new Date('2025-09-26T10:00:00').getTime();
     
     function updateCountdown() {
         const now = new Date().getTime();

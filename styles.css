@@ -17,6 +17,36 @@ body {
     padding: 0 20px;
 }
 
+/* Date Change Notice */
+.date-notice {
+    background: linear-gradient(45deg, #dc2626, #ef4444);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
+    position: relative;
+    z-index: 101;
+    animation: noticeGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes noticeGlow {
+    from { box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3); }
+    to { box-shadow: 0 4px 20px rgba(220, 38, 38, 0.5); }
+}
+
+.date-notice .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.date-notice::before {
+    content: '⚠️';
+    font-size: 1.2em;
+}
+
 /* Header */
 header {
     padding: 20px 0;
@@ -449,46 +479,6 @@ nav {
     margin-bottom: 10px;
 }
 
-/* Criteria Section */
-.criteria {
-    padding: 80px 0;
-}
-
-.criteria h2 {
-    text-align: center;
-    font-size: 3rem;
-    margin-bottom: 50px;
-    background: linear-gradient(45deg, #fb923c, #fdba74, #fbbf24, #ffffff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.criteria-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.criteria-item {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 30px;
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: all 0.3s ease;
-}
-
-.criteria-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-}
-
-.criteria-item h3 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-    color: #ffd700;
-}
-
 /* Contact Section */
 .contact {
     padding: 40px 0;
@@ -629,7 +619,7 @@ footer {
         font-size: 1.2rem;
     }
     
-    .about h2, .requirements h2, .prizes h2, .criteria h2 {
+    .about h2, .requirements h2, .prizes h2 {
         font-size: 2rem;
     }
     
@@ -658,5 +648,10 @@ footer {
     
     .countdown-label {
         font-size: 0.8rem;
+    }
+
+    .date-notice .container {
+        flex-direction: column;
+        gap: 5px;
     }
 }
