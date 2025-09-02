@@ -3,138 +3,414 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DFWHacks 2025 - AI-Powered Innovation</title>
-    <meta name="description" content="Join DFWHacks 2025 - The premier AI hackathon in Dallas-Fort Worth. Build innovative solutions, compete for prizes, and connect with fellow developers.">
-    <meta name="keywords" content="hackathon, AI, Dallas, Fort Worth, DFW, programming, competition, innovation">
-    <link rel="stylesheet" href="styles.css">
+    <title>DFWhacks - Dallas-Fort Worth Hackathon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #374151 100%); }
+        .hero-gradient { background: linear-gradient(135deg, #1e3a8a 0%, #374151 50%, #1f2937 100%); }
+    </style>
 </head>
-<body>
-    <!-- Date Change Notice -->
-    <div class="date-notice">
-        <div class="container">
-            <span>IMPORTANT: Event date has been moved from August 2 to September 26, 2025</span>
-        </div>
-    </div>
+<body class="bg-gray-50">
+              <!-- Navigation -->
+     <nav class="bg-white shadow-lg fixed w-full z-[9999]" style="background-color: white !important;">
+         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+             <div class="flex justify-between h-20">
+                 <div class="flex items-center">
+                     <div class="flex-shrink-0">
+                         <a href="#home" class="block">
+                             <img src="logo.png" alt="DFWhacks Logo" class="h-16 w-auto">
+                         </a>
+                     </div>
+                 </div>
+                 <div class="hidden md:flex items-center space-x-8">
+                     <a href="#about" class="text-gray-700 hover:text-orange-500 transition-colors">About</a>
+                     <a href="#schedule" class="text-gray-700 hover:text-orange-500 transition-colors">Requirements</a>
+                     <a href="#prizes" class="text-gray-700 hover:text-orange-500 transition-colors">Prizes</a>
+                     <a href="faq.html" class="text-gray-700 hover:text-orange-500 transition-colors">FAQ</a>
+                     <a href="code-of-conduct.html" class="text-gray-700 hover:text-orange-500 transition-colors">Rules</a>
+                     <a href="#contact" class="text-gray-700 hover:text-orange-500 transition-colors">Contact</a>
+                     <a href="sponsors.html" class="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition-colors">Sponsors</a>
+                 </div>
+                 <div class="md:hidden flex items-center">
+                     <button id="mobile-menu-button" class="text-gray-700">
+                         <i class="fas fa-bars text-xl"></i>
+                     </button>
+                 </div>
+             </div>
+         </div>
+         <!-- Mobile menu -->
+         <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+             <div class="px-2 pt-2 pb-3 space-y-1">
+                 <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-orange-500">About</a>
+                 <a href="#schedule" class="block px-3 py-2 text-gray-700 hover:text-orange-500">Requirements</a>
+                 <a href="#prizes" class="block px-3 py-2 text-gray-700 hover:text-orange-500">Prizes</a>
+                 <a href="faq.html" class="block px-3 py-2 text-gray-700 hover:text-orange-500">FAQ</a>
+                 <a href="code-of-conduct.html" class="block px-3 py-2 text-gray-700 hover:text-orange-500">Rules</a>
+                 <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-orange-500">Contact</a>
+                 <a href="sponsors.html" class="block px-3 py-2 bg-orange-500 text-white rounded-lg mx-3">Sponsors</a>
+             </div>
+         </div>
+         
+                   <!-- Event Info Banner -->
+          <div id="event-banner" class="bg-orange-500 text-white py-2 px-4 shadow-lg">
+              <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-center">
+                  <div class="flex items-center">
+                      <i class="fas fa-calendar text-orange-200 mr-2"></i>
+                      <span class="font-semibold">September 27th, 2025</span>
+                  </div>
+                  <div class="hidden md:block text-orange-200">•</div>
+                  <div class="flex items-center">
+                      <i class="fas fa-map-marker-alt text-orange-200 mr-2"></i>
+                      <span class="font-semibold">Location TBA</span>
+                  </div>
+                  <div class="hidden md:block text-orange-200">•</div>
+                  <div class="flex items-center">
+                      <i class="fas fa-exclamation-triangle text-orange-200 mr-2"></i>
+                      <span class="text-sm">Date & Location Updated!</span>
+                  </div>
+              </div>
+          </div>
+     </nav>
 
-    <!-- Header -->
-    <header>
-        <nav class="container">
-            <div class="logo">DFWHacks</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#requirements">Requirements</a></li>
-                <li><a href="#prizes">Prizes</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+         <!-- Hero Section -->
+     <!-- Hero Section -->
+<section id="home" class="hero-gradient min-h-screen flex items-center justify-center relative overflow-hidden" style="padding-top: 140px; margin-top: 0;">
+   <div class="absolute inset-0 bg-black opacity-20"></div>
+   <div class="relative z-10 text-center text-white px-4">
+       <h1 class="text-5xl md:text-7xl font-bold mb-6" id="hero-title">DFWhacks</h1>
+       <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto" id="mission-statement" style="opacity: 0;">Our mission is to empower the next generation of builders and make technology accessible, inclusive, and fun for students across the DFW area.</p>
+       <div class="flex flex-col sm:flex-row gap-4 justify-center">
+           <a href="https://docs.google.com/forms/d/e/1FAIpQLSejIAeyAnQgooJx8j1Se_aqKzioVx9vqLSiI9KL5mDcbAiOJA/viewform" target="_blank" class="bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors inline-block text-center">
+               Register Now
+           </a>
+           <a href="#about" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-orange-500 transition-colors inline-block text-center">
+               Learn More
+           </a>
+       </div>
+       
+       <!-- Countdown Timer -->
+       <div class="mt-8 bg-black bg-opacity-30 backdrop-blur-sm rounded-xl p-6 max-w-2xl mx-auto border border-white border-opacity-20">
+           <h3 class="text-lg font-semibold mb-4">Event Starts In:</h3>
+           <div id="countdown" class="grid grid-cols-3 gap-4 text-center">
+               <div class="bg-white bg-opacity-10 rounded-lg p-3">
+                   <div id="days" class="text-3xl font-bold">00</div>
+                   <div class="text-sm text-gray-200">Days</div>
+               </div>
+               <div class="bg-white bg-opacity-10 rounded-lg p-3">
+                   <div id="hours" class="text-3xl font-bold">00</div>
+                   <div class="text-sm text-gray-200">Hours</div>
+               </div>
+               <div class="bg-white bg-opacity-10 rounded-lg p-3">
+                   <div id="minutes" class="text-3xl font-bold">00</div>
+                   <div class="text-sm text-gray-200">Minutes</div>
+               </div>
+           </div>
+       </div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>DFWHacks 2025</h1>
-                <p class="subtitle">Build AI-Powered Solutions That Matter</p>
-                <p class="date">September 26, 2025 | Frisco Public Library</p>
-                <div id="countdown"></div>
-                <a href="https://forms.gle/FfJAkcxu4rf8WJ8E6" class="cta-button" target="_blank">Register Now</a>
-            </div>
-        </div>
-    </section>
+       <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+           <div class="text-center">
+               <div class="text-4xl font-bold mb-2">100</div>
+               <div class="text-lg">Participants</div>
+           </div>
+           <div class="text-center">
+               <div class="text-4xl font-bold mb-2" id="prize-amount">$500+</div>
+               <div class="text-lg">In Prizes</div>
+           </div>
+       </div>
+   </div>
+</section>
 
     <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="slide-up-title">About the Challenge</h2>
-            <p style="text-align: center; font-size: 1.2rem; max-width: 800px; margin: 0 auto 40px; opacity: 0.9;" class="slide-up-title">
-                Welcome to the 2025 DFWHacks Hackathon! Join us for an exciting day of innovation, creativity, and problem-solving as we tackle real-world challenges with AI-powered solutions!
-            </p>
-            
-            <div class="about-content">
-                <div class="about-card slide-up-card">
-                    <h3>🚀 Innovation</h3>
-                    <p>Build cutting-edge AI applications that solve meaningful problems and make a real impact in the world.</p>
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">About DFWhacks</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    DFW Hacks is more than a hackathon—it's a celebration of creativity, collaboration, and the future of tech. Join us on <strong>September 26th, 2025</strong> at the <strong>Frisco Public Library</strong> for an action-packed day where high school students of all experience levels will form teams, build software and hardware projects, attend engaging workshops, and get guidance from industry mentors. <strong>Everyone is welcome!</strong> Come with an idea or simply your curiosity; leave with new skills, new friends, and something you're proud to demo.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-laptop-code text-2xl text-orange-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Build</h3>
+                    <p class="text-gray-600">Build cutting-edge AI applications that solve meaningful problems and make a real impact in the world.</p>
                 </div>
-                <div class="about-card slide-up-card">
-                    <h3>🤝 Collaboration</h3>
-                    <p>Work with students and mentors from across the Dallas-Fort Worth area!</p>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-2xl text-orange-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Connect</h3>
+                    <p class="text-gray-600">Work with students and mentors from across the Dallas-Fort Worth area!</p>
                 </div>
-                <div class="about-card slide-up-card">
-                    <h3>🏆 Competition</h3>
-                    <p>Compete for exciting prizes while learning new skills!</p>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-trophy text-2xl text-orange-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Competition</h3>
+                    <p class="text-gray-600">Compete for exciting prizes while learning new skills!</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-graduation-cap text-2xl text-orange-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Learn</h3>
+                    <p class="text-gray-600">Attend workshops, learn from experts, and master new technologies!</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Requirements Section -->
-    <section id="requirements" class="requirements">
-        <div class="container">
-            <h2 class="slide-up-title">Requirements</h2>
-            <div class="req-grid">
-                <div class="req-card slide-up-card">
-                    <h3>What to Build</h3>
-                    <p>You will be building an AI-powered app to solve a specific problem. The challenge problem will be revealed at the opening ceremony at 10:00 AM sharp! Come prepared to think creatively and work collaboratively.</p>
+    <section id="schedule" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Project Requirements</h2>
+                <p class="text-xl text-gray-600">What you'll build and how to submit your project</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <div class="text-orange-500 font-semibold mb-4">
+                        <i class="fas fa-lightbulb text-2xl mr-3"></i>What to Build
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">AI-Powered Application</h3>
+                    <p class="text-gray-600 mb-4">You will be building an AI-powered app to solve a specific problem. The challenge problem will be revealed at the opening ceremony at 10:00 AM sharp!</p>
+                    <div class="bg-orange-50 p-4 rounded-lg">
+                        <p class="text-orange-700 font-medium">Come prepared to think creatively and work collaboratively.</p>
+                    </div>
                 </div>
-                <div class="req-card slide-up-card">
-                    <h3>What to Submit</h3>
-                    <p>Submit a 1-minute video explaining your app's functionalities and impact, along with a link to your GitHub repository containing your complete project code and documentation.</p>
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <div class="text-orange-500 font-semibold mb-4">
+                        <i class="fas fa-upload text-2xl mr-3"></i>What to Submit
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Project Deliverables</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-video text-orange-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold">1-Minute Video</h4>
+                                <p class="text-gray-600 text-sm">Explain your app's functionalities and impact</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fab fa-github text-orange-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold">GitHub Repository</h4>
+                                <p class="text-gray-600 text-sm">Complete project code and documentation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <div class="bg-orange-100 border-l-4 border-orange-500 p-6 max-w-4xl mx-auto">
+                    <h3 class="text-xl font-semibold text-orange-800 mb-2">Important Note</h3>
+                    <p class="text-orange-700">The specific challenge problem will be announced during the opening ceremony. Make sure to arrive on time to hear the requirements and start building your AI solution!</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Prizes Section -->
-    <section id="prizes" class="prizes">
-        <div class="container">
-            <h2 class="slide-up-title">Prizes</h2>
-            <div class="prizes-grid">
-                <div class="prize-card slide-up-card">
-                    <h3>🥇 1st Place</h3>
-                    <div class="prize-amount">$200</div>
-                    <p>Gift Card</p>
+    <section id="prizes" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Amazing Prizes</h2>
+                                 <p class="text-xl text-gray-600">Compete for over $500 in prizes and opportunities</p>
+            </div>
+                         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                 <div class="text-center p-8 border-2 border-orange-200 rounded-lg hover:border-orange-400 transition-colors">
+                     <div class="text-6xl mb-4">🥇</div>
+                     <h3 class="text-2xl font-bold mb-2">1st Place</h3>
+                     <div class="text-3xl font-bold text-orange-500 mb-2">$200 Gift Card</div>
+                 </div>
+                 <div class="text-center p-8 border-2 border-orange-200 rounded-lg hover:border-orange-400 transition-colors">
+                     <div class="text-6xl mb-4">🥈</div>
+                     <h3 class="text-2xl font-bold mb-2">2nd Place</h3>
+                     <div class="text-3xl font-bold text-orange-500 mb-2">$100 Gift Card</div>
+                 </div>
+                 <div class="text-center p-8 border-2 border-orange-200 rounded-lg hover:border-orange-400 transition-colors">
+                     <div class="text-6xl mb-4">🥉</div>
+                     <h3 class="text-2xl font-bold mb-2">3rd Place</h3>
+                     <div class="text-3xl font-bold text-orange-500 mb-2">$50 Gift Card</div>
+                 </div>
+                 <div class="text-center p-8 border-2 border-orange-200 rounded-lg hover:border-orange-400 transition-colors">
+                     <div class="text-6xl mb-4">💡</div>
+                     <h3 class="text-2xl font-bold mb-2">Most Unique</h3>
+                     <div class="text-3xl font-bold text-orange-500 mb-2">$50 Gift Card</div>
+                     <p class="text-gray-600">Most creative and innovative solution</p>
+                 </div>
+             </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Sponsors</h2>
+                <p class="text-xl text-gray-600">Proudly supported by industry leaders</p>
+            </div>
+            
+            <!-- Partner Sponsor -->
+            <div class="mb-12">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Official Partner</h3>
+                    <p class="text-gray-600">All donations are tax deductible through Hack Club's 501(c)(3) nonprofit status</p>
                 </div>
-                <div class="prize-card slide-up-card">
-                    <h3>🥈 2nd Place</h3>
-                    <div class="prize-amount">$100</div>
-                    <p>Gift Card</p>
+                <div class="flex justify-center">
+                    <div class="bg-white p-10 rounded-xl shadow-xl text-center max-w-sm border-2 border-orange-200">
+                        <div class="text-5xl font-bold text-orange-500 mb-3">Hack Club</div>
+                        <p class="text-gray-600 font-medium">Official Partner</p>
+                        <div class="mt-4 text-sm text-orange-600 font-semibold">501(c)(3) Nonprofit</div>
+                    </div>
                 </div>
-                <div class="prize-card slide-up-card">
-                    <h3>🥉 3rd Place</h3>
-                    <div class="prize-amount">$50</div>
-                    <p>Gift Card</p>
+            </div>
+
+            <!-- Current Sponsors -->
+            <div class="mb-12">
+                <div class="text-center mb-12">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Current Sponsors</h3>
+                    <p class="text-gray-600">Thank you to our amazing sponsors</p>
                 </div>
-                <div class="prize-card slide-up-card">
-                    <h3>⭐ Most Unique</h3>
-                    <div class="prize-amount">$50</div>
-                    <p>Gift Card</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center border border-gray-100 hover:shadow-xl transition-shadow">
+                        <div class="text-3xl font-bold text-gray-700 mb-2">JantaPower</div>
+                        <p class="text-gray-500 text-sm">Technology Partner</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center border border-gray-100 hover:shadow-xl transition-shadow">
+                        <div class="text-3xl font-bold text-gray-700 mb-2">PantasticLLC</div>
+                        <p class="text-gray-500 text-sm">Innovation Partner</p>
+                    </div>
                 </div>
+            </div>
+
+            <div class="text-center">
+                <a href="sponsors.html" class="bg-orange-500 text-white px-10 py-4 rounded-lg hover:bg-orange-600 transition-colors inline-block font-semibold text-lg">
+                    Become a Sponsor
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="slide-up-title">Contact Us</h2>
-            <ul class="contact-list slide-up-card">
-                <li>• Instagram: <a href="https://instagram.com/dfwhacks" target="_blank">@dfwhacks</a></li>
-                <li>• Phone: <a href="tel:+19722497263">+1 972 249 7263</a></li>
-                <li>• Email: <a href="mailto:dfw.hackz@gmail.com">dfw.hackz@gmail.com</a></li>
-            </ul>
-            <p class="copyright slide-up-card">© 2025 DFWHacks 2025. All rights reserved.</p>
-        </div>
-    </section>
+                   <!-- Founding Team Section -->
+      <section id="register" class="py-20 bg-white">
+          <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+              <h2 class="text-4xl font-bold mb-4 text-gray-900">Meet Our Founding Team</h2>
+              <p class="text-xl mb-12 text-gray-600">The passionate students behind DFWhacks</p>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  <!-- Team Member 1 -->
+                  <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all border border-gray-200">
+                      <div class="w-32 h-32 bg-orange-200 rounded-full mx-auto mb-6 flex items-center justify-center">
+                          <i class="fas fa-user text-4xl text-orange-600"></i>
+                      </div>
+                      <h3 class="text-2xl font-bold mb-2 text-gray-900">Team Member 1</h3>
+                      <p class="text-orange-500 mb-4">Founder & Lead Organizer</p>
+                      <p class="text-gray-600 text-sm">Passionate about making technology accessible to all students</p>
+                  </div>
+                  
+                  <!-- Team Member 2 -->
+                  <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all border border-gray-200">
+                      <div class="w-32 h-32 bg-orange-200 rounded-full mx-auto mb-6 flex items-center justify-center">
+                          <i class="fas fa-user text-4xl text-orange-600"></i>
+                      </div>
+                      <h3 class="text-2xl font-bold mb-2 text-gray-900">Team Member 2</h3>
+                      <p class="text-orange-500 mb-4">Technical Director</p>
+                      <p class="text-gray-600 text-sm">Expert in AI and machine learning technologies</p>
+                  </div>
+                  
+                  <!-- Team Member 3 -->
+                  <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all border border-gray-200">
+                      <div class="w-32 h-32 bg-orange-200 rounded-full mx-auto mb-6 flex items-center justify-center">
+                          <i class="fas fa-user text-4xl text-orange-600"></i>
+                      </div>
+                      <h3 class="text-2xl font-bold mb-2 text-gray-900">Team Member 3</h3>
+                      <p class="text-orange-500 mb-4">Community Outreach</p>
+                      <p class="text-gray-600 text-sm">Building connections across the DFW area</p>
+                  </div>
+                  
+                  <!-- Team Member 4 -->
+                  <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all border border-gray-200">
+                      <div class="w-32 h-32 bg-orange-200 rounded-full mx-auto mb-6 flex items-center justify-center">
+                          <i class="fas fa-user text-4xl text-orange-600"></i>
+                      </div>
+                      <h3 class="text-2xl font-bold mb-2 text-gray-900">Team Member 4</h3>
+                      <p class="text-orange-500 mb-4">Event Coordinator</p>
+                      <p class="text-gray-600 text-sm">Ensuring everything runs smoothly</p>
+                  </div>
+                  
+                  <!-- Team Member 5 -->
+                  <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all border border-gray-200">
+                      <div class="w-32 h-32 bg-orange-200 rounded-full mx-auto mb-6 flex items-center justify-center">
+                          <i class="fas fa-user text-4xl text-orange-600"></i>
+                      </div>
+                      <h3 class="text-2xl font-bold mb-2 text-gray-900">Team Member 5</h3>
+                      <p class="text-orange-500 mb-4">Sponsorship Manager</p>
+                      <p class="text-gray-600 text-sm">Building partnerships with amazing sponsors</p>
+                  </div>
+                  
+                  <!-- Team Member 6 -->
+                  <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all border border-gray-200">
+                      <div class="w-32 h-32 bg-orange-200 rounded-full mx-auto mb-6 flex items-center justify-center">
+                          <i class="fas fa-user text-4xl text-orange-600"></i>
+                      </div>
+                      <h3 class="text-2xl font-bold mb-2 text-gray-900">Team Member 6</h3>
+                      <p class="text-orange-500 mb-4">Workshop Coordinator</p>
+                      <p class="text-gray-600 text-sm">Creating amazing learning experiences</p>
+                  </div>
+              </div>
+          </div>
+      </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="logo">DFWHacks 2025</div>
-                <div class="footer-links">
-                    <a href="https://dfwhacks.org" target="_blank">Website</a>
-                    <a href="https://forms.gle/FfJAkcxu4rf8WJ8E6" target="_blank">Register</a>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-orange-400 mb-4">DFWhacks</h3>
+                    <p class="text-gray-400">The premier hackathon experience in the Dallas-Fort Worth metroplex.</p>
                 </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#schedule" class="hover:text-white transition-colors">Requirements</a></li>
+                        <li><a href="#prizes" class="hover:text-white transition-colors">Prizes</a></li>
+                        <li><a href="sponsors.html" class="hover:text-white transition-colors">Sponsors</a></li>
+                    </ul>
+                </div>
+                                 <div>
+                     <h4 class="font-semibold mb-4">Resources</h4>
+                     <ul class="space-y-2 text-gray-400">
+                         <li><a href="code-of-conduct.html" class="hover:text-white transition-colors">Code of Conduct</a></li>
+                         <li><a href="faq.html" class="hover:text-white transition-colors">FAQ</a></li>
+                     </ul>
+                 </div>
+                                 <div id="contact">
+                     <h4 class="font-semibold mb-4">Contact Us</h4>
+                     <div class="space-y-2 text-gray-400">
+                         <div class="flex items-center">
+                             <i class="fab fa-instagram text-orange-400 mr-2"></i>
+                             <span>@dfwhacks</span>
+                         </div>
+                         <div class="flex items-center">
+                             <i class="fas fa-phone text-orange-400 mr-2"></i>
+                             <span>+1 972 249 7263</span>
+                         </div>
+                         <div class="flex items-center">
+                             <i class="fas fa-envelope text-orange-400 mr-2"></i>
+                             <span>dfw.hackz@gmail.com</span>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 DFWhacks. All rights reserved.</p>
             </div>
         </div>
     </footer>

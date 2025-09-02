@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - DFWhacks</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #374151 100%); }
+        .hero-gradient { background: linear-gradient(135deg, #1e3a8a 0%, #374151 50%, #1f2937 100%); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-[9999]" style="background-color: white !important;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <a href="index.html" class="block">
+                            <img src="logo.png" alt="DFWhacks Logo" class="h-16 w-auto">
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#about" class="text-gray-700 hover:text-orange-500 transition-colors">About</a>
+                    <a href="index.html#schedule" class="text-gray-700 hover:text-orange-500 transition-colors">Requirements</a>
+                    <a href="index.html#prizes" class="text-gray-700 hover:text-orange-500 transition-colors">Prizes</a>
+                    <a href="faq.html" class="text-gray-700 hover:text-orange-500 transition-colors">FAQ</a>
+                    <a href="code-of-conduct.html" class="text-gray-700 hover:text-orange-500 transition-colors">Rules</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-orange-500 transition-colors">Contact</a>
+                    <a href="index.html#sponsors" class="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition-colors">Sponsors</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html#about" class="block px-3 py-2 text-gray-700 hover:text-orange-500">About</a>
+                <a href="index.html#schedule" class="block px-3 py-2 text-gray-700 hover:text-orange-500">Requirements</a>
+                <a href="index.html#prizes" class="block px-3 py-2 text-gray-700 hover:text-orange-500">Prizes</a>
+                <a href="faq.html" class="block px-3 py-2 text-gray-700 hover:text-orange-500">FAQ</a>
+                <a href="code-of-conduct.html" class="block px-3 py-2 text-gray-700 hover:text-orange-500">Rules</a>
+                <a href="index.html#contact" class="block px-3 py-2 text-gray-700 hover:text-orange-500">Contact</a>
+                <a href="index.html#sponsors" class="block px-3 py-2 bg-orange-500 text-white rounded-lg mx-3">Sponsors</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-32 text-center text-white relative overflow-hidden" style="padding-top: 120px;">
+        <div class="absolute inset-0 bg-black opacity-20"></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Frequently Asked Questions</h1>
+            <p class="text-xl md:text-2xl opacity-90">Everything you need to know about DFW Hacks</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="space-y-8">
+                <!-- FAQ Item 1 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-users text-orange-500 mr-3"></i>
+                        Who can participate?
+                    </h3>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        Any high school student! Coding experience is required to ensure 
+                    </p>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-calendar text-orange-500 mr-3"></i>
+                        When is it?
+                    </h3>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        September 27, 2025 (updated from August 2). Watch the site and your email for the final schedule.
+                    </p>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-map-marker-alt text-orange-500 mr-3"></i>
+                        Where is it?
+                    </h3>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        In North Dallas, TX. The exact venue will be shared with registered participants.
+                    </p>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-dollar-sign text-orange-500 mr-3"></i>
+                        Is it free?
+                    </h3>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        Yes! Thanks to our sponsors, DFW Hacks is free for all participants. Your ticket includes meals, swag, workshops, and mentor support.
+                    </p>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-suitcase text-orange-500 mr-3"></i>
+                        What should I bring?
+                    </h3>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        A laptop, charger, student ID, and anything you like to code or tinker with. We'll provide Wi-Fi, power, meals, and a beginner-friendly setup.
+                    </p>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-handshake text-orange-500 mr-3"></i>
+                        Do I need a team?
+                    </h3>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        Nope! You can work alone, find a team or bring a team of up to 4. We'll help everyone find a group.
+                    </p>
+                </div>
+
+                <!-- FAQ Item 7 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-laptop-code text-orange-500 mr-3"></i>
+                        What can I build?
+                    </h3>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        Anything that solves a real problem or showcases creativity—web or mobile apps, games, data/AI projects, or hardware hacks. You'll have access to mentors, workshops, and example starter kits to get going.
+                    </p>
+                </div>
+
+                <!-- FAQ Item 8 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-graduation-cap text-orange-500 mr-3"></i>
+                        Are beginners supported?
+                    </h3>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        Absolutely. We'll run hands-on workshops, office hours, and guided starter tracks so first-timers can ship a project by demo time.
+                    </p>
+                </div>
+
+                <!-- FAQ Item 9 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-utensils text-orange-500 mr-3"></i>
+                        Will there be food?
+                    </h3>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        Yes—meals, snacks, and drinks throughout the event. We accommodate dietary restrictions; just tell us during registration.
+                    </p>
+                </div>
+
+                <!-- FAQ Item 10 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-robot text-orange-500 mr-3"></i>
+                        Can I use AI tools?
+                    </h3>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        Yes, as long as you follow our rules and disclose any AI assistance in your README or slides. (See our Code of Conduct for details.)
+                    </p>
+                </div>
+
+                <!-- FAQ Item 11 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-trophy text-orange-500 mr-3"></i>
+                        How are projects judged?
+                    </h3>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        By a panel of mentors and industry guests using criteria like impact, creativity, technical implementation, and presentation. Judges' decisions are final.
+                    </p>
+                </div>
+
+                <!-- FAQ Item 12 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-copyright text-orange-500 mr-3"></i>
+                        Do we keep our IP?
+                    </h3>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        Yes—you own what you build. By demoing, you grant us permission to showcase your project for judging and event highlights.
+                    </p>
+                </div>
+
+                <!-- FAQ Item 13 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-shield-alt text-orange-500 mr-3"></i>
+                        What's the Code of Conduct?
+                    </h3>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        We're committed to a safe, inclusive environment. Read our full <a href="code-of-conduct.html" class="text-orange-500 hover:text-orange-600 underline">Code of Conduct</a> on the site. Violations may result in removal or disqualification.
+                    </p>
+                </div>
+
+                <!-- FAQ Item 14 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-envelope text-orange-500 mr-3"></i>
+                        How do I contact the team?
+                    </h3>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        Email <a href="mailto:dfw.hackz@gmail.com" class="text-orange-500 hover:text-orange-600 underline">dfw.hackz@gmail.com</a> or text/call <a href="tel:+19722497263" class="text-orange-500 hover:text-orange-600 underline">+1 (972) 249-7263</a>. We're happy to help!
+                    </p>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="mt-16 text-center">
+                <div class="bg-orange-50 border-2 border-orange-200 rounded-xl p-8">
+                    <h3 class="text-2xl font-bold text-orange-800 mb-4">Ready to Join Us?</h3>
+                    <p class="text-orange-700 mb-6 text-lg">Still have questions? Don't hesitate to reach out!</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSejIAeyAnQgooJx8j1Se_aqKzioVx9vqLSiI9KL5mDcbAiOJA/viewform" target="_blank" class="bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors inline-block text-center">
+                            Register Now
+                        </a>
+                        <a href="index.html" class="border-2 border-orange-500 text-orange-500 px-8 py-3 rounded-lg font-semibold hover:bg-orange-500 hover:text-white transition-colors inline-block text-center">
+                            Back to Home
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-orange-400 mb-4">DFWhacks</h3>
+                    <p class="text-gray-400">The premier hackathon experience in the Dallas-Fort Worth metroplex.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html#about" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="index.html#schedule" class="hover:text-white transition-colors">Requirements</a></li>
+                        <li><a href="index.html#prizes" class="hover:text-white transition-colors">Prizes</a></li>
+                        <li><a href="index.html#sponsors" class="hover:text-white transition-colors">Sponsors</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="code-of-conduct.html" class="hover:text-white transition-colors">Code of Conduct</a></li>
+                        <li><a href="faq.html" class="hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact Us</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <div class="flex items-center">
+                            <i class="fab fa-instagram text-orange-400 mr-2"></i>
+                            <span>@dfwhacks</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-orange-400 mr-2"></i>
+                            <span>+1 972 249 7263</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-orange-400 mr-2"></i>
+                            <span>dfw.hackz@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 DFWhacks. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
