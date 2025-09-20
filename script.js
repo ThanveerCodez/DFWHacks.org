@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (missionStatement) {
             // Make mission statement visible and start typing
             missionStatement.style.opacity = '1';
-            typeWriter(missionStatement, 'Our mission is to empower the next generation of builders and make technology accessible, inclusive, and fun for students across the DFW area.', 30);
+            typeWriter(missionStatement, 'Join us on Saturday September 27 at Collin College Frisco for a day of coding, collaborating and learning!', 30);
         }
     }
 
