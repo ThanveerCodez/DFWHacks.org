@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DFWhacks - Dallas-Fort Worth Hackathon</title>
+    <title>DFWhacks 2025 - Event Recap</title>
     <link rel="icon" href="favicon.png" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -15,349 +15,235 @@
     </style>
 </head>
 <body class="bg-gray-50">
-              <!-- Navigation -->
-     <nav class="bg-white shadow-lg fixed w-full z-[9999]" style="background-color: white !important;">
-         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-             <div class="flex justify-between h-20">
-                 <div class="flex items-center">
-                     <div class="flex-shrink-0">
-                         <a href="#home" class="block">
-                             <img src="logo.png" alt="DFWhacks Logo" class="h-16 w-auto">
-                         </a>
-                     </div>
-                 </div>
-                 <div class="hidden md:flex items-center space-x-8">
-                     <a href="#about" class="text-gray-700 hover:text-orange-500 transition-colors">About</a>
-                     <a href="#schedule" class="text-gray-700 hover:text-orange-500 transition-colors">Requirements</a>
-                     <a href="#prizes" class="text-gray-700 hover:text-orange-500 transition-colors">Prizes</a>
-                     <a href="faq.html" class="text-gray-700 hover:text-orange-500 transition-colors">FAQ</a>
-                     <a href="code-of-conduct.html" class="text-gray-700 hover:text-orange-500 transition-colors">Rules</a>
-                     <a href="#contact" class="text-gray-700 hover:text-orange-500 transition-colors">Contact</a>
-                     <a href="sponsors.html" class="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition-colors">Sponsors</a>
-                 </div>
-                 <div class="md:hidden flex items-center">
-                     <button id="mobile-menu-button" class="text-gray-700">
-                         <i class="fas fa-bars text-xl"></i>
-                     </button>
-                 </div>
-             </div>
-         </div>
-         <!-- Mobile menu -->
-         <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
-             <div class="px-2 pt-2 pb-3 space-y-1">
-                 <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-orange-500">About</a>
-                 <a href="#schedule" class="block px-3 py-2 text-gray-700 hover:text-orange-500">Requirements</a>
-                 <a href="#prizes" class="block px-3 py-2 text-gray-700 hover:text-orange-500">Prizes</a>
-                 <a href="faq.html" class="block px-3 py-2 text-gray-700 hover:text-orange-500">FAQ</a>
-                 <a href="code-of-conduct.html" class="block px-3 py-2 text-gray-700 hover:text-orange-500">Rules</a>
-                 <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-orange-500">Contact</a>
-                 <a href="sponsors.html" class="block px-3 py-2 bg-orange-500 text-white rounded-lg mx-3">Sponsors</a>
-             </div>
-         </div>
-         
-                   <!-- Event Info Banner -->
-          <div id="event-banner" class="bg-orange-500 text-white py-2 px-4 shadow-lg">
-              <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-center">
-                  <div class="flex items-center">
-                      <i class="fas fa-calendar text-orange-200 mr-2"></i>
-                      <span class="font-semibold">September 27th, 2025</span>
-                  </div>
-                  <div class="hidden md:block text-orange-200">•</div>
-                  <div class="flex items-center">
-                      <i class="fas fa-map-marker-alt text-orange-200 mr-2"></i>
-                      <span class="font-semibold">Collin College Frisco</span>
-                  </div>
-                  <div class="hidden md:block text-orange-200">•</div>
-                  <div class="flex items-center">
-                      <i class="fas fa-exclamation-triangle text-orange-200 mr-2"></i>
-                      <span class="text-sm">Date & Location Updated!</span>
-                  </div>
-              </div>
-          </div>
-     </nav>
-
-         <!-- Hero Section -->
-<section id="home" class="hero-gradient flex items-center justify-center relative overflow-hidden" style="padding-top: 140px; margin-top: 0; min-height: 110vh;">
-   <div class="absolute inset-0 bg-black opacity-20"></div>
-   <div class="relative z-10 text-center text-white px-4">
-       <h1 class="text-5xl md:text-7xl font-bold mb-6" id="hero-title">DFWhacks</h1>
-       <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto" id="mission-statement" style="opacity: 0;">Join us on Saturday September 27 at Collin College Frisco for a day of coding, collaborating and learning</p>
-       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-           <a href="https://docs.google.com/forms/d/e/1FAIpQLSejIAeyAnQgooJx8j1Se_aqKzioVx9vqLSiI9KL5mDcbAiOJA/viewform" target="_blank" class="bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors inline-block text-center">
-               Register Now
-           </a>
-           <a href="https://discord.gg/GDfYu88bF4" target="_blank" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-block text-center">
-               Join Discord
-           </a>
-           <a href="#about" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-orange-500 transition-colors inline-block text-center">
-               Learn More
-           </a>
-       </div>
-       
-       <!-- Countdown Timer -->
-       <div class="mt-8 bg-black bg-opacity-30 backdrop-blur-sm rounded-xl p-6 max-w-2xl mx-auto border border-white border-opacity-20">
-           <h3 class="text-lg font-semibold mb-4">Event Starts In:</h3>
-           <div id="countdown" class="grid grid-cols-3 gap-4 text-center">
-               <div class="bg-white bg-opacity-10 rounded-lg p-3">
-                   <div id="days" class="text-3xl font-bold">00</div>
-                   <div class="text-sm text-gray-200">Days</div>
-               </div>
-               <div class="bg-white bg-opacity-10 rounded-lg p-3">
-                   <div id="hours" class="text-3xl font-bold">00</div>
-                   <div class="text-sm text-gray-200">Hours</div>
-               </div>
-               <div class="bg-white bg-opacity-10 rounded-lg p-3">
-                   <div id="minutes" class="text-3xl font-bold">00</div>
-                   <div class="text-sm text-gray-200">Minutes</div>
-               </div>
-           </div>
-       </div>
-
-       <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-           <div class="text-center">
-               <div class="text-4xl font-bold mb-2">50</div>
-               <div class="text-lg">Participants</div>
-           </div>
-           <div class="text-center">
-               <div class="text-4xl font-bold mb-2" id="prize-amount">$500+</div>
-               <div class="text-lg">In Prizes</div>
-           </div>
-           <div class="text-center">
-               <div class="text-4xl font-bold mb-2">10</div>
-               <div class="text-lg">Hours of Coding</div>
-           </div>
-       </div>
-   </div>
-</section>
-<!-- Webinar Workshops Section -->
-<section class="py-20 bg-white border-b border-gray-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <div class="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
-                <i class="fas fa-video mr-2"></i>
-                Pre-Event Workshop Series
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-[9999]" style="background-color: white !important;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <a href="#home" class="block">
+                            <img src="logo.png" alt="DFWhacks Logo" class="h-16 w-auto">
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-orange-500 transition-colors">About</a>
+                    <a href="#highlights" class="text-gray-700 hover:text-orange-500 transition-colors">Highlights</a>
+                    <a href="#winners" class="text-gray-700 hover:text-orange-500 transition-colors">Winners</a>
+                    <a href="faq.html" class="text-gray-700 hover:text-orange-500 transition-colors">FAQ</a>
+                    <a href="#team" class="text-gray-700 hover:text-orange-500 transition-colors">Team</a>
+                    <a href="#contact" class="text-gray-700 hover:text-orange-500 transition-colors">Contact</a>
+                    <a href="https://discord.gg/GDfYu88bF4" target="_blank" class="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition-colors">Join Community</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
             </div>
-            <h2 class="text-4xl font-bold text-gray-900 mb-4">Get Ready for DFWhacks</h2>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                Join our free webinar workshops on <strong>Saturday, September 20th</strong> to build essential skills before the big day
-                <br>
-                <br>
-            </p>
-            <a href="https://drive.google.com/drive/folders/1ZKiW8gNUK3mco-Sf9oX0Mzy9CLNYJIjP?usp=drive_link" target="_blank" class="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-flex items-center shadow-lg">
-            <i class="fas fa-video mr-2"></i>
-            View Past Webinars
-        </a>
         </div>
-    </div>
-</section>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-orange-500">About</a>
+                <a href="#highlights" class="block px-3 py-2 text-gray-700 hover:text-orange-500">Highlights</a>
+                <a href="#winners" class="block px-3 py-2 text-gray-700 hover:text-orange-500">Winners</a>
+                <a href="faq.html" class="block px-3 py-2 text-gray-700 hover:text-orange-500">FAQ</a>
+                <a href="#team" class="block px-3 py-2 text-gray-700 hover:text-orange-500">Team</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-orange-500">Contact</a>
+                <a href="https://discord.gg/GDfYu88bF4" target="_blank" class="block px-3 py-2 bg-orange-500 text-white rounded-lg mx-3">Join Community</a>
+            </div>
+        </div>
+        
+        <!-- Event Success Banner -->
+        <div id="event-banner" class="bg-green-600 text-white py-2 px-4 shadow-lg">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-center">
+                <div class="flex items-center">
+                    <i class="fas fa-check-circle text-green-200 mr-2"></i>
+                    <span class="font-semibold">Event Completed Successfully!</span>
+                </div>
+                <div class="hidden md:block text-green-200">•</div>
+                <div class="flex items-center">
+                    <i class="fas fa-users text-green-200 mr-2"></i>
+                    <span class="font-semibold">62 Participants</span>
+                </div>
+                <div class="hidden md:block text-green-200">•</div>
+                <div class="flex items-center">
+                    <i class="fas fa-calendar text-green-200 mr-2"></i>
+                    <span class="text-sm">September 27th, 2025</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient flex items-center justify-center relative overflow-hidden" style="padding-top: 140px; margin-top: 0; min-height: 110vh;">
+        <div class="absolute inset-0 bg-black opacity-20"></div>
+        <div class="relative z-10 text-center text-white px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6" id="hero-title">DFWhacks 2025</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Thank you to all 62 participants who joined us on September 27th at Collin College Frisco for an amazing day of coding, collaboration, and innovation!</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#highlights" class="bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors inline-block text-center">
+                    View Highlights
+                </a>
+                <a href="https://discord.gg/GDfYu88bF4" target="_blank" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-block text-center">
+                    Join Our Community
+                </a>
+                <a href="#winners" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-orange-500 transition-colors inline-block text-center">
+                    See Winners
+                </a>
+            </div>
+            
+            <!-- Event Success Stats -->
+            <div class="mt-8 bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 max-w-2xl mx-auto border border-white border-opacity-20">
+                <h3 class="text-2xl font-bold mb-2">✨ Event Success!</h3>
+                <p class="text-lg">A day of innovation, learning, and community building</p>
+            </div>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="text-center bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6">
+                    <div class="text-4xl font-bold mb-2">62</div>
+                    <div class="text-lg">Talented Participants</div>
+                </div>
+                <div class="text-center bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6">
+                    <div class="text-4xl font-bold mb-2">$500+</div>
+                    <div class="text-lg">Prizes Awarded</div>
+                </div>
+                <div class="text-center bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6">
+                    <div class="text-4xl font-bold mb-2">10</div>
+                    <div class="text-lg">Hours of Innovation</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
     <section id="about" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">About DFWhacks</h2>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">About DFWhacks 2025</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    DFW Hacks is more than a hackathon—it's a celebration of creativity, collaboration, and the future of tech. Join us on <strong>September 27th, 2025</strong> at the <strong>Collin College Frisco</strong> for an action-packed day where high school students of all experience levels will form teams, build software and hardware projects, attend engaging workshops, and get guidance from industry mentors. <strong>Everyone is welcome!</strong> Come with an idea or simply your curiosity; leave with new skills, new friends, and something you're proud to demo.
+                    DFWhacks 2025 was an incredible celebration of creativity, collaboration, and the future of tech. On <strong>September 27th, 2025</strong> at <strong>Collin College Frisco</strong>, 62 talented high school students came together to form teams, build innovative AI-powered applications, attend engaging workshops, and receive guidance from industry mentors. It was an unforgettable day filled with learning, innovation, and community building. Thank you to everyone who participated and made this event a tremendous success!
                 </p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="text-center p-6">
-                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-laptop-code text-2xl text-orange-500"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Build</h3>
-                    <p class="text-gray-600">Build cutting-edge AI applications that solve meaningful problems and make a real impact in the world.</p>
+        </div>
+    </section>
+    <!-- Webinar Workshops Section -->
+    <section class="py-20 bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    <i class="fas fa-video mr-2"></i>
+                    Pre-Event Workshop Series
                 </div>
-                <div class="text-center p-6">
-                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-users text-2xl text-orange-500"></i>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Workshop Recordings Available</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Missed our pre-event workshops? Watch the recordings to learn essential skills and concepts covered before DFWhacks 2025
+                    <br>
+                    <br>
+                </p>
+                <a href="https://drive.google.com/drive/folders/1ZKiW8gNUK3mco-Sf9oX0Mzy9CLNYJIjP?usp=drive_link" target="_blank" class="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-flex items-center shadow-lg">
+                    <i class="fas fa-video mr-2"></i>
+                    Watch Workshop Recordings
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Highlights Section -->
+    <section id="highlights" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Event Highlights</h2>
+                <p class="text-xl text-gray-600">A recap of our amazing day</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-bullhorn text-2xl text-orange-500"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Opening Ceremony</h3>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">Connect</h3>
-                    <p class="text-gray-600">Work with students and mentors from across the Dallas-Fort Worth area!</p>
+                    <p class="text-gray-600 mb-3">Started at 10:00 AM with an energizing welcome and challenge reveal</p>
+                    <p class="text-gray-700">Participants learned about the AI challenge, formed teams, and kicked off their projects with enthusiasm and creativity.</p>
                 </div>
-                <div class="text-center p-6">
-                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-trophy text-2xl text-orange-500"></i>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-code text-2xl text-orange-500"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Intense Coding</h3>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">Competition</h3>
-                    <p class="text-gray-600">Compete for exciting prizes while learning new skills!</p>
+                    <p class="text-gray-600 mb-3">10 hours of non-stop innovation and collaboration</p>
+                    <p class="text-gray-700">Teams worked tirelessly, building AI-powered applications with guidance from mentors and support from organizers.</p>
                 </div>
-                <div class="text-center p-6">
-                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-graduation-cap text-2xl text-orange-500"></i>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-chalkboard-teacher text-2xl text-orange-500"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Workshops & Mentorship</h3>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">Learn</h3>
-                    <p class="text-gray-600">Attend workshops, learn from experts, and master new technologies!</p>
+                    <p class="text-gray-600 mb-3">Learning opportunities throughout the day</p>
+                    <p class="text-gray-700">Participants attended engaging workshops and received one-on-one mentorship from industry professionals.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-trophy text-2xl text-orange-500"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Closing Ceremony</h3>
+                    </div>
+                    <p class="text-gray-600 mb-3">Celebrated achievements and awarded prizes at 7:00 PM</p>
+                    <p class="text-gray-700">Teams showcased their amazing projects, winners were announced, and we celebrated everyone's hard work.</p>
                 </div>
             </div>
         </div>
     </section>
 
-<!-- Schedule Section -->
-<section id="schedule-timeline" class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold text-gray-900 mb-4">Event Schedule</h2>
-            <p class="text-xl text-gray-600">Your day at DFWhacks - September 27th, 2025</p>
-        </div>
-        
-        <div class="max-w-4xl mx-auto">
-            <div class="relative">
-                <!-- Timeline line -->
-                <div class="absolute left-8 md:left-1/2 transform md:-translate-x-0.5 w-0.5 h-full bg-orange-300"></div>
-                
-                <!-- Schedule items -->
-                <div class="space-y-12">
-                    <!-- Opening Ceremony -->
-                    <div class="relative flex items-center">
-                        <div class="absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-orange-500 rounded-full border-4 border-white shadow-lg z-10"></div>
-                        <div class="ml-16 md:ml-0 md:w-1/2 md:pr-8">
-                            <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
-                                <div class="flex items-center mb-3">
-                                    <i class="fas fa-bullhorn text-2xl text-orange-500 mr-3"></i>
-                                    <h3 class="text-xl font-bold text-gray-900">Opening Ceremony</h3>
-                                </div>
-                                <p class="text-3xl font-bold text-orange-500 mb-2">10:00 AM</p>
-                                <p class="text-gray-600">Welcome, introductions, challenge reveal, and team formation</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Lunch -->
-                    <div class="relative flex items-center">
-                        <div class="absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-orange-500 rounded-full border-4 border-white shadow-lg z-10"></div>
-                        <div class="ml-16 md:ml-0 md:w-1/2 md:pl-8 md:ml-auto">
-                            <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
-                                <div class="flex items-center mb-3">
-                                    <i class="fas fa-utensils text-2xl text-orange-500 mr-3"></i>
-                                    <h3 class="text-xl font-bold text-gray-900">Lunch Break</h3>
-                                </div>
-                                <p class="text-3xl font-bold text-orange-500 mb-2">1:00 PM</p>
-                                <p class="text-gray-600">Fuel up with delicious food and network with fellow hackers</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Submissions Due -->
-                    <div class="relative flex items-center">
-                        <div class="absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-orange-500 rounded-full border-4 border-white shadow-lg z-10"></div>
-                        <div class="ml-16 md:ml-0 md:w-1/2 md:pr-8">
-                            <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
-                                <div class="flex items-center mb-3">
-                                    <i class="fas fa-upload text-2xl text-orange-500 mr-3"></i>
-                                    <h3 class="text-xl font-bold text-gray-900">Submissions Due</h3>
-                                </div>
-                                <p class="text-3xl font-bold text-orange-500 mb-2">6:00 PM</p>
-                                <p class="text-gray-600">Final deadline for project submissions and demo videos</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Winners Announced -->
-                    <div class="relative flex items-center">
-                        <div class="absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-orange-500 rounded-full border-4 border-white shadow-lg z-10"></div>
-                        <div class="ml-16 md:ml-0 md:w-1/2 md:pl-8 md:ml-auto">
-                            <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
-                                <div class="flex items-center mb-3">
-                                    <i class="fas fa-trophy text-2xl text-orange-500 mr-3"></i>
-                                    <h3 class="text-xl font-bold text-gray-900">Winners Announced</h3>
-                                </div>
-                                <p class="text-3xl font-bold text-orange-500 mb-2">7:00 PM</p>
-                                <p class="text-gray-600">Closing ceremony, project showcases, and prize distribution</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Additional Info -->
-        <div class="mt-16 text-center">
-            <div class="bg-orange-50 border-l-4 border-orange-500 p-6 max-w-4xl mx-auto rounded-lg">
-                <p class="text-orange-700">Mentor assistance will be available continuously. Don't hesitate to ask for help!</p>
-            </div>
-        </div>
-    </div>
-</section>
-    <!-- Requirements Section -->
-    <section id="schedule" class="py-20 bg-gray-50">
+    <!-- Winners Section -->
+    <section id="winners" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Project Requirements</h2>
-                <p class="text-xl text-gray-600">What you'll build and how to submit your project</p>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">🏆 Our Winners</h2>
+                <p class="text-xl text-gray-600">Congratulations to all teams who competed!</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white rounded-lg shadow-lg p-8">
-                    <div class="text-orange-500 font-semibold mb-4">
-                        <i class="fas fa-lightbulb text-2xl mr-3"></i>What to Build
-                    </div>
-                    <h3 class="text-xl font-semibold mb-4">AI-Powered Application</h3>
-                    <p class="text-gray-600 mb-4">You will be building an AI-powered app to solve a specific problem. The challenge problem will be revealed at the opening ceremony at 10:00 AM sharp!</p>
-                    <div class="bg-orange-50 p-4 rounded-lg">
-                        <p class="text-orange-700 font-medium">Come prepared to think creatively and work collaboratively.</p>
-                    </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center p-8 border-2 border-yellow-400 bg-yellow-50 rounded-lg">
+                    <div class="text-6xl mb-4">🥇</div>
+                    <h3 class="text-2xl font-bold mb-2">1st Place</h3>
+                    <div class="text-3xl font-bold text-orange-500 mb-2">$100 Gift Card</div>
+                    <p class="text-gray-600 font-semibold">Awarded</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg p-8">
-                    <div class="text-orange-500 font-semibold mb-4">
-                        <i class="fas fa-upload text-2xl mr-3"></i>What to Submit
-                    </div>
-                    <h3 class="text-xl font-semibold mb-4">Project Deliverables</h3>
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <i class="fas fa-video text-orange-500 mt-1 mr-3"></i>
-                            <div>
-                                <h4 class="font-semibold">1-Minute Video</h4>
-                                <p class="text-gray-600 text-sm">Explain your app's functionalities and impact</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <i class="fab fa-github text-orange-500 mt-1 mr-3"></i>
-                            <div>
-                                <h4 class="font-semibold">GitHub Repository</h4>
-                                <p class="text-gray-600 text-sm">Complete project code and documentation</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="text-center p-8 border-2 border-gray-400 bg-gray-50 rounded-lg">
+                    <div class="text-6xl mb-4">🥈</div>
+                    <h3 class="text-2xl font-bold mb-2">2nd Place</h3>
+                    <div class="text-3xl font-bold text-orange-500 mb-2">$50 Gift Card</div>
+                    <p class="text-gray-600 font-semibold">Awarded</p>
+                </div>
+                <div class="text-center p-8 border-2 border-orange-400 bg-orange-50 rounded-lg">
+                    <div class="text-6xl mb-4">🥉</div>
+                    <h3 class="text-2xl font-bold mb-2">3rd Place</h3>
+                    <div class="text-3xl font-bold text-orange-500 mb-2">$25 Gift Card</div>
+                    <p class="text-gray-600 font-semibold">Awarded</p>
+                </div>
+                <div class="text-center p-8 border-2 border-purple-400 bg-purple-50 rounded-lg">
+                    <div class="text-6xl mb-4">💡</div>
+                    <h3 class="text-2xl font-bold mb-2">Most Unique</h3>
+                    <div class="text-3xl font-bold text-orange-500 mb-2">$25 Gift Card</div>
+                    <p class="text-gray-600 font-semibold">Most creative solution</p>
                 </div>
             </div>
             <div class="mt-12 text-center">
-                <div class="bg-orange-100 border-l-4 border-orange-500 p-6 max-w-4xl mx-auto">
-                    <h3 class="text-xl font-semibold text-orange-800 mb-2">Important Note</h3>
-                    <p class="text-orange-700">The specific challenge problem will be announced during the opening ceremony. Make sure to arrive on time to hear the requirements and start building your AI solution!</p>
+                <div class="bg-orange-50 border-l-4 border-orange-500 p-6 max-w-4xl mx-auto rounded-lg">
+                    <p class="text-orange-800 text-lg">🎉 Thank you to all participants for your incredible work and dedication! Every project showcased amazing talent and innovation.</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Prizes Section -->
-    <section id="prizes" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Amazing Prizes</h2>
-                                 <p class="text-xl text-gray-600">Compete for over $500 in prizes and opportunities</p>
-            </div>
-                         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                 <div class="text-center p-8 border-2 border-orange-200 rounded-lg hover:border-orange-400 transition-colors">
-                     <div class="text-6xl mb-4">🥇</div>
-                     <h3 class="text-2xl font-bold mb-2">1st Place</h3>
-                     <div class="text-3xl font-bold text-orange-500 mb-2">$100 Gift Card</div>
-                 </div>
-                 <div class="text-center p-8 border-2 border-orange-200 rounded-lg hover:border-orange-400 transition-colors">
-                     <div class="text-6xl mb-4">🥈</div>
-                     <h3 class="text-2xl font-bold mb-2">2nd Place</h3>
-                     <div class="text-3xl font-bold text-orange-500 mb-2">$50 Gift Card</div>
-                 </div>
-                 <div class="text-center p-8 border-2 border-orange-200 rounded-lg hover:border-orange-400 transition-colors">
-                     <div class="text-6xl mb-4">🥉</div>
-                     <h3 class="text-2xl font-bold mb-2">3rd Place</h3>
-                     <div class="text-3xl font-bold text-orange-500 mb-2">$25 Gift Card</div>
-                 </div>
-                 <div class="text-center p-8 border-2 border-orange-200 rounded-lg hover:border-orange-400 transition-colors">
-                     <div class="text-6xl mb-4">💡</div>
-                     <h3 class="text-2xl font-bold mb-2">Most Unique</h3>
-                     <div class="text-3xl font-bold text-orange-500 mb-2">$25 Gift Card</div>
-                     <p class="text-gray-600">Most creative and innovative solution</p>
-                 </div>
-             </div>
         </div>
     </section>
 
@@ -365,15 +251,15 @@
     <section id="sponsors" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Sponsors</h2>
-                <p class="text-xl text-gray-600">Proudly supported by industry leaders</p>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Thank You to Our Sponsors</h2>
+                <p class="text-xl text-gray-600">This event wouldn't have been possible without their support</p>
             </div>
             
             <!-- Partner Sponsor -->
             <div class="mb-12">
                 <div class="text-center mb-8">
                     <h3 class="text-2xl font-bold text-gray-900 mb-2">Official Partner</h3>
-                    <p class="text-gray-600">All donations are tax deductible through Hack Club's 501(c)(3) nonprofit status</p>
+                    <p class="text-gray-600">All donations were tax deductible through Hack Club's 501(c)(3) nonprofit status</p>
                 </div>
                 <div class="flex justify-center">
                     <div class="bg-white p-10 rounded-xl shadow-xl text-center max-w-sm border-2 border-orange-200">
@@ -384,89 +270,87 @@
                 </div>
             </div>
 
-            <!-- Current Sponsors -->
+            <!-- Event Sponsors -->
             <div class="mb-12">
                 <div class="text-center mb-12">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Current Sponsors</h3>
-                    <p class="text-gray-600">Thank you to our amazing sponsors</p>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Event Sponsors</h3>
+                    <p class="text-gray-600">Thank you for making DFWhacks 2025 possible</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                    <div class="bg-white p-8 rounded-xl shadow-lg text-center border border-gray-100 hover:shadow-xl transition-shadow">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center border border-gray-100">
                         <div class="text-3xl font-bold text-gray-700 mb-2">JantaPower</div>
+                        <p class="text-sm text-gray-500">Event Sponsor</p>
                     </div>
-                    <div class="bg-white p-8 rounded-xl shadow-lg text-center border border-gray-100 hover:shadow-xl transition-shadow">
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center border border-gray-100">
                         <div class="text-3xl font-bold text-gray-700 mb-2">PantasticLLC</div>
+                        <p class="text-sm text-gray-500">Event Sponsor</p>
                     </div>
-                    <div class="bg-white p-8 rounded-xl shadow-lg text-center border border-gray-100 hover:shadow-xl transition-shadow">
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center border border-gray-100">
                         <div class="text-3xl font-bold text-gray-700 mb-2">MakeX Corp</div>
+                        <p class="text-sm text-gray-500">Event Sponsor</p>
                     </div>
                 </div>
-            </div>
-
-            <div class="text-center">
-                <a href="sponsors.html" class="bg-orange-500 text-white px-10 py-4 rounded-lg hover:bg-orange-600 transition-colors inline-block font-semibold text-lg">
-                    Become a Sponsor
-                </a>
             </div>
         </div>
     </section>
 
-                   <!-- Founding Team Section -->
-      <section id="register" class="py-20 bg-white">
-          <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <h2 class="text-4xl font-bold mb-4 text-gray-900">Meet Our Founding Team</h2>
-              <p class="text-xl mb-12 text-gray-600">The passionate students behind DFWhacks</p>
-              
-              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  <!-- Team Member 1 -->
-                  <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all border border-gray-200">
-                      <h3 class="text-2xl font-bold mb-2 text-gray-900">Thanveer Muthukumar</h3>
-                      <p class="text-orange-500 mb-4">Founder & Lead Organizer</p>
-                      <p class="text-gray-600 text-sm">Passionate about making technology accessible to all students</p>
-                  </div>
-                  
-                  <!-- Team Member 2 -->
-                  <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all border border-gray-200">
-                      
-                      <h3 class="text-2xl font-bold mb-2 text-gray-900">Siddharth Chandragiri</h3>
-                      <p class="text-orange-500 mb-4">Outreach and Marketing</p>
-                      <p class="text-gray-600 text-sm">Helping DFWHacks make an impact</p>
-                  </div>
-                  
-                  <!-- Team Member 3 -->
-                  <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all border border-gray-200">
-                    
-                      <h3 class="text-2xl font-bold mb-2 text-gray-900">Hamza Aboutaleb</h3>
-                      <p class="text-orange-500 mb-4">Sponsorship Manager</p>
-                      <p class="text-gray-600 text-sm">Building partnerships with amazing sponsors</p>
-                  </div>
-                  
-                  <!-- Team Member 4 -->
-                  <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all border border-gray-200">
-                      
-                      <h3 class="text-2xl font-bold mb-2 text-gray-900">Nikhil Kudva</h3>
-                      <p class="text-orange-500 mb-4">Event Coordinator</p>
-                      <p class="text-gray-600 text-sm">Ensuring everything runs smoothly</p>
-                  </div>
-                  
-                  <!-- Team Member 5 -->
-                  <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all border border-gray-200">
-                      
-                      <h3 class="text-2xl font-bold mb-2 text-gray-900">Ishaan Bidarkar</h3>
-                      <p class="text-orange-500 mb-4">Financial Manager</p>
-                      <p class="text-gray-600 text-sm">Ensuring our finances are in order</p>
-                  </div>
-                  
-                  <!-- Team Member 6 -->
-                  <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all border border-gray-200">
-                      
-                      <h3 class="text-2xl font-bold mb-2 text-gray-900">Sripad Saraf</h3>
-                      <p class="text-orange-500 mb-4">Workshop Coordinator</p>
-                      <p class="text-gray-600 text-sm">Creating amazing learning experiences</p>
-                  </div>
-              </div>
-          </div>
-      </section>
+    <!-- Founding Team Section -->
+    <section id="team" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-4 text-gray-900">Our Organizing Team</h2>
+            <p class="text-xl mb-12 text-gray-600">The passionate students who made DFWhacks 2025 a reality</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all border border-gray-200">
+                    <h3 class="text-2xl font-bold mb-2 text-gray-900">Thanveer Muthukumar</h3>
+                    <p class="text-orange-500 mb-4">Founder & Lead Organizer</p>
+                    <p class="text-gray-600 text-sm">Made technology accessible to all students in DFW</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all border border-gray-200">
+                    <h3 class="text-2xl font-bold mb-2 text-gray-900">Siddharth Chandragiri</h3>
+                    <p class="text-orange-500 mb-4">Outreach and Marketing</p>
+                    <p class="text-gray-600 text-sm">Spread the word and brought the community together</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all border border-gray-200">
+                    <h3 class="text-2xl font-bold mb-2 text-gray-900">Hamza Aboutaleb</h3>
+                    <p class="text-orange-500 mb-4">Sponsorship Manager</p>
+                    <p class="text-gray-600 text-sm">Built partnerships with amazing sponsors</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all border border-gray-200">
+                    <h3 class="text-2xl font-bold mb-2 text-gray-900">Nikhil Kudva</h3>
+                    <p class="text-orange-500 mb-4">Event Coordinator</p>
+                    <p class="text-gray-600 text-sm">Ensured everything ran smoothly on event day</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all border border-gray-200">
+                    <h3 class="text-2xl font-bold mb-2 text-gray-900">Ishaan Bidarkar</h3>
+                    <p class="text-orange-500 mb-4">Financial Manager</p>
+                    <p class="text-gray-600 text-sm">Managed finances and budget successfully</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-all border border-gray-200">
+                    <h3 class="text-2xl font-bold mb-2 text-gray-900">Sripad Saraf</h3>
+                    <p class="text-orange-500 mb-4">Workshop Coordinator</p>
+                    <p class="text-gray-600 text-sm">Created amazing learning experiences</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-orange-500 to-orange-600">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-white mb-6">Stay Connected</h2>
+            <p class="text-xl text-orange-100 mb-8">Join our Discord community to stay updated on future events and connect with fellow hackers!</p>
+            <a href="https://discord.gg/GDfYu88bF4" target="_blank" class="bg-white text-orange-600 px-10 py-4 rounded-lg hover:bg-gray-100 transition-colors inline-flex items-center font-semibold text-lg shadow-lg">
+                <i class="fab fa-discord mr-3 text-2xl"></i>
+                Join Our Discord
+            </a>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
@@ -474,48 +358,64 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                     <h3 class="text-2xl font-bold text-orange-400 mb-4">DFWhacks</h3>
-                    <p class="text-gray-400">The premier hackathon experience in the Dallas-Fort Worth metroplex.</p>
+                    <p class="text-gray-400">Thank you for making DFWhacks 2025 an incredible success!</p>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2 text-gray-400">
                         <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
-                        <li><a href="#schedule" class="hover:text-white transition-colors">Requirements</a></li>
-                        <li><a href="#prizes" class="hover:text-white transition-colors">Prizes</a></li>
-                        <li><a href="sponsors.html" class="hover:text-white transition-colors">Sponsors</a></li>
+                        <li><a href="#highlights" class="hover:text-white transition-colors">Highlights</a></li>
+                        <li><a href="#winners" class="hover:text-white transition-colors">Winners</a></li>
+                        <li><a href="#sponsors" class="hover:text-white transition-colors">Sponsors</a></li>
                     </ul>
                 </div>
-                                 <div>
-                     <h4 class="font-semibold mb-4">Resources</h4>
-                     <ul class="space-y-2 text-gray-400">
-                         <li><a href="code-of-conduct.html" class="hover:text-white transition-colors">Code of Conduct</a></li>
-                         <li><a href="faq.html" class="hover:text-white transition-colors">FAQ</a></li>
-                     </ul>
-                 </div>
-                                 <div id="contact">
-                     <h4 class="font-semibold mb-4">Contact Us</h4>
-                     <div class="space-y-2 text-gray-400">
-                         <div class="flex items-center">
-                             <i class="fab fa-instagram text-orange-400 mr-2"></i>
-                             <span>@dfwhacks</span>
-                         </div>
-                         <div class="flex items-center">
-                             <i class="fas fa-phone text-orange-400 mr-2"></i>
-                             <span>+1 972 249 7263</span>
-                         </div>
-                         <div class="flex items-center">
-                             <i class="fas fa-envelope text-orange-400 mr-2"></i>
-                             <span>dfw.hackz@gmail.com</span>
-                         </div>
-                     </div>
-                 </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="code-of-conduct.html" class="hover:text-white transition-colors">Code of Conduct</a></li>
+                        <li><a href="faq.html" class="hover:text-white transition-colors">FAQ</a></li>
+                        <li><a href="https://drive.google.com/drive/folders/1ZKiW8gNUK3mco-Sf9oX0Mzy9CLNYJIjP?usp=drive_link" target="_blank" class="hover:text-white transition-colors">Past Webinars</a></li>
+                    </ul>
+                </div>
+                <div id="contact">
+                    <h4 class="font-semibold mb-4">Contact Us</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <div class="flex items-center">
+                            <i class="fab fa-instagram text-orange-400 mr-2"></i>
+                            <span>@dfwhacks</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-orange-400 mr-2"></i>
+                            <span>+1 972 249 7263</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-orange-400 mr-2"></i>
+                            <span>dfw.hackz@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 DFWhacks. All rights reserved.</p>
+                <p>&copy; 2025 DFWhacks. All rights reserved. | DFWhacks 2025 - September 27th at Collin College Frisco</p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const menu = document.getElementById('mobile-menu');
+            const button = document.getElementById('mobile-menu-button');
+            if (!menu.contains(event.target) && !button.contains(event.target)) {
+                menu.classList.add('hidden');
+            }
+        });
+    </script>
 </body>
 </html>
