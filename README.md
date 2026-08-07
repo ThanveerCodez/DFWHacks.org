@@ -13,7 +13,6 @@ A The website for the DFWhacks hackathon event that took place on September 25 2
 ## Customization Guide
 
 ### Colors
-The website uses a purple theme. To change colors, update these classes in `index.html`:
 - Primary: `purple-600`, `purple-700`
 - Secondary: `gray-50`, `gray-100`
 - Gradients: `.gradient-bg` and `.hero-gradient` in the `<style>` section
