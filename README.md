@@ -19,13 +19,6 @@ A The website for the DFWhacks hackathon event that took place on September 25 2
 
 ### Content Updates
 
-```html
-<div class="bg-white p-6 rounded-lg shadow-md text-center">
-    <img src="path/to/sponsor-logo.png" alt="Sponsor Name" class="h-12 mx-auto">
-    <div class="text-lg font-semibold mt-2">Sponsor Name</div>
-</div>
-```
-
 ## File Structure
 
 ```
@@ -51,7 +44,7 @@ dfwhacks-website/
 - Edge (latest)
 - Mobile browsers
 
-## Deployed using GoDaddy DNS
+**Deployed using GoDaddy DNS**
 
 ## Support
 
