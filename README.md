@@ -1,4 +1,4 @@
-# DFWhacks - Dallas-Fort Worth Hackathon Website
+# [DEPRECATED] DFWhacks - Dallas-Fort Worth Hackathon Website
 
 A The website for the DFWhacks hackathon event that took place on September 25 2025 at Collin County Community College. Built with HTML, CSS (Tailwind), and JavaScript.
 
